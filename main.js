@@ -544,27 +544,25 @@ function fun1() {
 //------------------------------------------------------------
 
 // Setup
-function compareEquality(a, b) {
-  if (a === b) {
-    // Change this line
-    return "Equal";
-  }
-  return "Not Equal";
-}
+// function compareEquality(a, b) {
+//   if (a === b) {
+//     // Change this line
+//     return "Equal";
+//   }
+//   return "Not Equal";
+// }
 
-compareEquality(10, "10");
+// compareEquality(10, "10");
 
 //------------------------------------------------------------
 
 // Setup
-function testStrictNotEqual(val) {
-  if (val !== 17) {
-    // Change this line
-    return "Not Equal";
-  }
-  return "Equal";
-}
+// function testStrictNotEqual(val) {
+//   if (val !== 17) {
+//     // Change this line
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// }
 
-testStrictNotEqual(10);
-
-// git test
+// testStrictNotEqual(10);

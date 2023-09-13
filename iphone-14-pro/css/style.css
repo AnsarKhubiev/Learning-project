@@ -293,7 +293,8 @@ footer {
       z-index: 50;
    }
 
-   .logo, .phone {
+   .logo,
+   .phone {
       position: relative;
       z-index: 50;
    }
@@ -443,6 +444,23 @@ footer {
 
    .contacts-form {
       padding: 140px 30px;
+   }
+}
+
+@media (max-width: 420px) {
+   .nav {
+      flex-wrap: wrap;
+   }
+
+   .phone {
+      flex-basis: auto;
+      margin-top: 50px;
+      order: 3;
+      width: 100%;
+   }
+
+   .menu-item {
+      font-size: 32px;
    }
 }
 

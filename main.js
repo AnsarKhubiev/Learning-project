@@ -271,9 +271,9 @@ console.log(answer);
 //------------------------------------------------------------
 
 function chromosomeCheck(sperm) {
-  return `Congratulations! You're going to have a ${
-    sperm === "XY" ? "son" : "doughter"
-  }.`;
+    return `Congratulations! You're going to have a ${
+        sperm === "XY" ? "son" : "doughter"
+    }.`;
 }
 chromosomeCheck("XY");
 
@@ -406,7 +406,7 @@ chromosomeCheck("XY");
 // Declare the myGlobal variable below this line
 let myGlobal = 10;
 function fun1() {
-  oopsGlobal = 5;
+    oopsGlobal = 5;
 }
 
 // Only change code above this line
@@ -593,19 +593,20 @@ function fun1() {
 // showMinNumber(6, 6);
 
 function getNumbers() {
-  let numb = 0;
-  while (numb < 1 || numb % 1 !== 0) {
-    alert("Введите целое число больше 0");
-    numb = parseInt(prompt("Введите число"));
-  }
-  return numb;
+    let numb = 0;
+    while (numb < 1 || numb % 1 !== 0) {
+        alert("Введите целое число больше 0");
+        numb = parseInt(prompt("Введите число"));
+    }
+    return numb;
 }
-function pow() {
-  const numb1 = getNumbers();
-  const numb2 = getNumbers();
 
-  result = numb1 ** numb2;
-  alert(result);
+function pow() {
+    const numb1 = getNumbers();
+    const numb2 = getNumbers();
+
+    result = numb1 ** numb2;
+    alert(result);
 }
 
 pow();

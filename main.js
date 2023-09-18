@@ -582,12 +582,30 @@ function fun1() {
 //   return age > 18 || confirm("Родители разрешили?");
 // }
 
-function getMinNumber(a, b) {
-  return a > b ? b : a < b ? a : "числа равны";
+// function getMinNumber(a, b) {
+//   return a > b ? b : a < b ? a : "числа равны";
+// }
+
+// function showMinNumber(a, b) {
+//   console.log(getMinNumber(a, b));
+// }
+
+// showMinNumber(6, 6);
+
+function getNumbers() {
+  let numb = 0;
+  while (numb < 1 || numb % 1 !== 0) {
+    alert("Введите целое число больше 0");
+    numb = parseInt(prompt("Введите число"));
+  }
+  return numb;
+}
+function pow() {
+  const numb1 = getNumbers();
+  const numb2 = getNumbers();
+
+  result = numb1 ** numb2;
+  alert(result);
 }
 
-function showMinNumber(a, b) {
-  console.log(getMinNumber(a, b));
-}
-
-showMinNumber(6, 6);
+pow();

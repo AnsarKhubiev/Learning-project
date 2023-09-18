@@ -567,9 +567,27 @@ function fun1() {
 
 // testStrictNotEqual(10);
 
-function showMessage(firstName, lastName, nickName) {
-    userName = firstName ?? lastName ?? nickName;
-    console.log(userName);
-};
+// function showMessage(firstName, lastName, nickName) {
+//     userName = firstName ?? lastName ?? nickName;
+//     console.log(userName);
+// };
 
-showMessage(undefined, undefined, "Ans");
+// showMessage(undefined, undefined, "Ans");
+
+// function checkAge(age) {
+//   return age > 18 ? true : confirm("Родители разрешили?");
+// }
+
+// function checkAge1(age) {
+//   return age > 18 || confirm("Родители разрешили?");
+// }
+
+function getMinNumber(a, b) {
+  return a > b ? b : a < b ? a : "числа равны";
+}
+
+function showMinNumber(a, b) {
+  console.log(getMinNumber(a, b));
+}
+
+showMinNumber(6, 6);

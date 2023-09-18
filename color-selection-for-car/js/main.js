@@ -20,10 +20,12 @@ var buttons = document.querySelectorAll(".colorItem");
 var img = document.querySelector("#imgHolder img");
 
 buttons.forEach(function (item) {
-    item.addEventListener("click", function (e) {
-        img.src = `https://webcademy.ru/files/js2020/solaris/${e.target.dataset.file}`;
+   item.addEventListener("click", function (e) {
+      img.src = `https://webcademy.ru/files/js2020/solaris/${e.target.dataset.file}`;
 
-        document.querySelector(".colorItem--active").classList.remove("colorItem--active");
-        e.target.classList.add("colorItem--active");
-    });
+      document
+         .querySelector(".colorItem--active")
+         .classList.remove("colorItem--active");
+      e.target.classList.add("colorItem--active");
+   });
 });

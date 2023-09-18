@@ -567,8 +567,9 @@ function fun1() {
 
 // testStrictNotEqual(10);
 
-function showMessage() {
-    console.log("Hello!");
+function showMessage(firstName, lastName, nickName) {
+    userName = firstName ?? lastName ?? nickName;
+    console.log(userName);
 };
 
-showMessage();
+showMessage(undefined, undefined, "Ans");

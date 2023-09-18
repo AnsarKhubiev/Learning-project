@@ -620,7 +620,7 @@ function ask(question, yes, no) {
 }
 
 function question() {
-    return 'Вы хотите спать?';
+    return "Вы хотите спать?";
 }
 
 function sayYeas() {
@@ -631,5 +631,4 @@ function sayNo() {
     alert("Поработайте");
 }
 
-
-ask(question, sayYeas, sayNo)
+ask(question, sayYeas, sayNo);

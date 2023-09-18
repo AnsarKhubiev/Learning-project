@@ -566,3 +566,9 @@ function fun1() {
 // }
 
 // testStrictNotEqual(10);
+
+function showMessage() {
+    console.log("Hello!");
+};
+
+showMessage();

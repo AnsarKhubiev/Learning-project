@@ -592,21 +592,44 @@ function fun1() {
 
 // showMinNumber(6, 6);
 
-function getNumbers() {
-    let numb = 0;
-    while (numb < 1 || numb % 1 !== 0) {
-        alert("Введите целое число больше 0");
-        numb = parseInt(prompt("Введите число"));
+// function getNumbers() {
+//     let numb = 0;
+//     while (numb < 1 || numb % 1 !== 0) {
+//         alert("Введите целое число больше 0");
+//         numb = parseInt(prompt("Введите число"));
+//     }
+//     return numb;
+// }
+
+// function pow() {
+//     const numb1 = getNumbers();
+//     const numb2 = getNumbers();
+
+//     result = numb1 ** numb2;
+//     alert(result);
+// }
+
+// pow();
+
+function ask(question, yes, no) {
+    if (confirm(question())) {
+        yes();
+    } else {
+        no();
     }
-    return numb;
 }
 
-function pow() {
-    const numb1 = getNumbers();
-    const numb2 = getNumbers();
-
-    result = numb1 ** numb2;
-    alert(result);
+function question() {
+    return 'Вы хотите спать?';
 }
 
-pow();
+function sayYeas() {
+    alert("Ложитесь спать");
+}
+
+function sayNo() {
+    alert("Поработайте");
+}
+
+
+ask(question, sayYeas, sayNo)

@@ -611,24 +611,31 @@ function fun1() {
 
 // pow();
 
-function ask(question, yes, no) {
-    if (confirm(question())) {
-        yes();
-    } else {
-        no();
-    }
-}
+// function ask(question, yes, no) {
+//     if (confirm(question())) {
+//         yes();
+//     } else {
+//         no();
+//     }
+// }
 
-function question() {
-    return "Вы хотите спать?";
-}
+// function question() {
+//     return "Вы хотите спать?";
+// }
 
-function sayYeas() {
-    alert("Ложитесь спать");
-}
+// function sayYeas() {
+//     alert("Ложитесь спать");
+// }
 
-function sayNo() {
-    alert("Поработайте");
-}
+// function sayNo() {
+//     alert("Поработайте");
+// }
 
-ask(question, sayYeas, sayNo);
+// ask(question, sayYeas, sayNo);
+
+function countOfOccurrences(str, value) {
+    modStr = str.toLowerCase().split('');
+    modValue = value.toLowerCase();
+    
+    return modStr.filter(item => item === value).length
+}
